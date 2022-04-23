@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    1.Hindi<br>
+    2.English<br>
+    3.marathi<br>
+    Please Enter Your Choice: <input type="number" id="ch">
+    <input type="submit" onclick="Lang()">
+    <p id="ans"></p>
+
+    <script>
+        
+        function Lang(){
+        choice = document.getElementById("ch").value;
+        switch(choice) {
+        case '1':
+        document.getElementById("ans").innerHTML="welcome in Hindi language";
+        break;
+        case '2':
+        document.getElementById("ans").innerHTML="welcome in English language";
+        break;
+        case '3':
+        document.getElementById("ans").innerHTML="welcome in Marathi language";
+        break;
+    
+
+    default:
+    document.getElementById("ans").innerHTML="Invalid Choice";
+        break;
+}
+        } ;
+    </script>
+
+</body>
+</html>

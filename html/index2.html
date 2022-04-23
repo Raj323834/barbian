@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+    </style>
+</head>
+<body>
+    <p>Enter value = <span class="h1" id="result"></span></p><br>
+    <p>Round value of enter  = <span class="h1" id="result1"></span></p><br>
+    <p>floor value = <span class="h1" id="result"></span></p><br>
+    <p class="btn btn-danger">ceil value = <span class="h1 " id="result2"></span></p><br>
+    <p>max value = <span class="h1" id="max"></span></p><br>
+    <p>min value = <span class="h1" id="min"></span></p><br>
+    <p>absolute value = <span class="h1" id="result5"></span></p><br>
+    
+    <script>
+        window.alert("hello");
+        alert("jai ho");
+        let value= prompt("enter a number");
+        document.getElementById("result").innerHTML = (value);
+        document.getElementById("result1").innerHTML = Math.round(value);
+        document.getElementById("result").innerHTML = Math.floor(value);
+document.getElementById("result2").innerHTML = Math.ceil(value);
+document.getElementById("max").innerHTML = Math.max(10,50,500);
+document.getElementById("min").innerHTML = Math.min(10,50,50000000);
+document.getElementById("result5").innerHTML = Math.abs(value);
+
+
+let value1 ="career";
+console.log(value1.charAt(3));
+console.log(value1.length);
+console.log(value1.replace("career","rahul raj"));
+console.log(value1.concat("infotech"));
+console.log(value1.toLowerCase());
+console.log(value1.toUpperCase());
+    </script>
+</body>
+</html>

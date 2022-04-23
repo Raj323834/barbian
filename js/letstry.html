@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    Enter first number:<input type="number" id="n1"><br>
+    Enter second number: <input type="number" id="n2"><br>
+    <input type="button" value="Add" onclick="fun()">
+    <p id="ans"></p>
+    <script>
+        function fun(){
+            const number1 = parseFloat(document.getElementById('n1').value);
+        const number2 = parseFloat(document.getElementById('n2').value);
+        result = number1 + number2;
+        console.log(`${number1} + ${number2} = ${result}`);
+        document.getElementById("ans").innerHTML="addition of two number ="+result;
+        }
+       fun();
+    </script>
+</body>
+</html>

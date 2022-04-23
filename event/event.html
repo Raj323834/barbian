@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>JavaScript HTML Events</h2>
+<button onclick="this.innerHTML=Date()">The time is?</button>
+<h2>JavaScript HTML Events 2</h2>
+<button onclick="document.getElementById('demo').innerHTML=Date()">The time is?</button>
+
+<p id="demo"></p>
+
+JavaScript code is often several lines long.<br>
+ It is more common to see event attributes calling functions:<br>
+
+ <p>Click the button to display the date.</p>
+
+<button onclick="displayDate()">The time is?</button><br>
+<p id="demo2"></p><br>
+
+<table>
+    <td><tr>onchange :-</tr><tr>	An HTML element has been changed</tr></td><br>
+    <td><tr>onclick :-	</tr><tr>The user clicks an HTML element</tr></td>
+onmouseover :-	The user moves the mouse over an HTML element<br>
+onmouseout :-	The user moves the mouse away from an HTML element<br>
+onkeydown :-	The user pushes a keyboard key<br>
+onload :-	The browser has finished loading the page<br>
+</table>
+
+<script>
+function displayDate() {
+  document.getElementById("demo2").innerHTML = Date();
+}
+</script>
+</body>
+</html>
